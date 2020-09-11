@@ -14,20 +14,22 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         extendBodyBehindAppBar: true,
         appBar: AppBar(
+          toolbarHeight: 90.0,
           backgroundColor: Colors.transparent,
           elevation: 0.0,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Image.asset('assets/images/dots.png',
-                  fit: BoxFit.cover, height: 35.0),
+                  fit: BoxFit.cover, height: 20.0),
             ],
           ),
           actions: <Widget>[
             IconButton(
-              padding: EdgeInsets.all(5.0),
+              padding: EdgeInsets.only(right: 10.0),
               icon: Image.asset(
                 'assets/images/thunder.png',
+                fit: BoxFit.cover, height: 30.0,
                 color: Colors.white,
               ),
               onPressed: () {
@@ -42,7 +44,7 @@ class MyApp extends StatelessWidget {
           height: double.infinity,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/fitness.jpg'),
+              image: AssetImage('assets/images/fitness2.jpg'),
               fit: BoxFit.cover,
             ),
           ),
