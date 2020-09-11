@@ -20,18 +20,17 @@ class MyApp extends StatelessWidget {
           title: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Image.asset('assets/images/dots.png',
-                  fit: BoxFit.cover, height: 20.0),
+              Padding(
+                padding: const EdgeInsets.only(left:10.0),
+                child: Image.asset('assets/images/menu_dots.png',
+                    fit: BoxFit.cover, height: 25.0),
+              ),
             ],
           ),
           actions: <Widget>[
             IconButton(
               padding: EdgeInsets.only(right: 10.0),
-              icon: Image.asset(
-                'assets/images/thunder.png',
-                fit: BoxFit.cover, height: 30.0,
-                color: Colors.white,
-              ),
+              icon: Icon(Icons.favorite, size: 30.0,),
               onPressed: () {
                 // Implement navigation to shopping cart page here...
                 print('Click Search');
@@ -44,7 +43,7 @@ class MyApp extends StatelessWidget {
           height: double.infinity,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/fitness2.jpg'),
+              image: AssetImage('assets/images/women_fit.jpg'),
               fit: BoxFit.cover,
             ),
           ),
